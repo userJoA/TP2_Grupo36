@@ -152,9 +152,9 @@ public class ProcesoFecha {
 		LocalDate f2=LocalDate.parse(formatearFecha(this.fecha2));*/
 		
 		if(fecha1.isAfter(fecha2)) {
-			return "La fecha fecha1 es posterior a la fecha2";
+			return "La fecha fecha1: "+formatearFecha(fecha1) +" es posterior a la fecha2: "+formatearFecha(fecha2);
 		}else if(fecha1.isBefore(fecha2)) {
-			return "La fecha1 es anterior a fecha2";
+			return "La fecha1fecha1: "+formatearFecha(fecha1)+" es anterior a fecha2"+formatearFecha(fecha2);
 		}else {
 			return "Ambas fechas son iguales";
 		}
